@@ -53,13 +53,6 @@ pip install -e .
 
 ## Usage
 
-```python
-import polflow
-
-# Example: Run a workflow (see documentation for details)
-# polflow.workflows.main.run(...)
-```
-
 See the [examples/](examples/) directory for sample scripts and workflows.
 
 ## Contributing
