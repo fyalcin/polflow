@@ -1,0 +1,48 @@
+[project]
+name = "polflow"
+version = "0.1.0"
+description = "Add your description here"
+authors = [
+    { name = "firat", email = "firat.yalcin@univie.ac.at" }
+]
+dependencies = [
+    "fireworks>=2.0.3",
+    "atomate>=1.1.0",
+    "pymatgen>=2024.6.10",
+    "pandas>=2.2.2",
+    "streamlit>=1.36.0",
+    "htflow-utils>=1.0.3",
+    "custodian>=2024.6.24",
+    "notebook>=7.3.2",
+    "ipywidgets>=8.1.5",
+    "kaleido==0.2.1",
+    "scikit-learn>=1.5.2",
+    "jax>=0.4.36",
+    "graphviz>=0.20.3",
+    "ipython>=8.34.0",
+    "ruff>=0.11.8",
+]
+readme = "README.md"
+requires-python = ">= 3.10"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.rye]
+managed = true
+universal = true
+dev-dependencies = [
+    "black>=24.4.2",
+]
+
+[tool.rye.scripts]
+lint = { chain = ["lint:black", "lint:flake8" ] }
+"lint:black" = "black --check src"
+"lint:flake8" = "flake8 src"
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/polflow"]

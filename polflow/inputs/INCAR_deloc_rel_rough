@@ -1,0 +1,42 @@
+# smearing
+ISMEAR = 0
+SIGMA = 0.05
+
+# parallelization
+NCORE = 8
+
+# projection
+LORBIT = 10
+
+# spin
+ISPIN = 1
+
+# relax
+NSW = 100
+IBRION = 1
+ISIF = 2
+EDIFFG = 1E-3
+
+# electronic degrees
+ENCUT = 250
+NELM = 60
+LREAL = A
+PREC = N
+
+# mixing
+ALGO = F
+MAXMIX = 40
+LMAXMIX  = 4
+AMIX = 0.4
+BMIX = 1.0
+AMIX_MAG = 0.4
+
+# pbeu
+LDAU         =   .TRUE.
+LDAUTYPE     =   2
+LDAUPRINT    =   2
+
+# write files
+LWAVE = .FALSE.
+LCHARG = .TRUE.
+

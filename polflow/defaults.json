@@ -1,0 +1,9 @@
+{
+  "database_params": {
+    "deloc_results_coll": "deloc_results",
+    "polaron_results_coll": "polaron_results",
+    "calc_data_coll": "calc_data",
+    "db_file": "auto",
+    "high_level_db": "polaron_test"
+  }
+}
